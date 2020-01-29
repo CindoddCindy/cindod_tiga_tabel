@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: cindy.onetomany
+---
+testFramework: junit
+sourceLanguage: java
