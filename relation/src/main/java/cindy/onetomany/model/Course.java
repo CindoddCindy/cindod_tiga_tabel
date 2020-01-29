@@ -18,6 +18,14 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
-public class Course{
+@Table(name = "course")
+public class Course extends GetMethods { 
+
+    @OneToMany(mappedBy = "courses")
+    set<CourseRegistration> courseRegistration;
+
+GetMethods getMethods = new GetMethods();
+
+@override 
 
 }
